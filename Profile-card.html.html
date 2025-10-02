@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile Card</title>
+</head>
+<style>
+    .container{
+        height: 70vh;
+        background-color: aliceblue;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        background-color: white;
+        height: 190px;
+        width: 200px;
+        
+
+    }   
+    .disp{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    @media(max-width:640px){
+        .container{
+        flex-direction:column;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_incoming&w=740&q=80" alt="" height="130">
+            <h2>Asit Kumar Sahu</h2>
+        </div>
+        <div class="box">
+            <div class="disp">
+            <p>Web Developer</p>
+            <button>Contact</button>
+            <button>Portfolio</button>
+        </div>
+    </div>
+</body>
+</html>

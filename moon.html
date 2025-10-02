@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earth and Revolving Moon</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+     } 
+
+    .earth {
+      height: 200px;
+      width: 200px;
+      background-color: blue;
+      border-radius: 50%;
+      box-shadow: 20px 0px 40px rgba(0, 0, 255, 0.5);
+    }
+
+    .orbit {
+      position: absolute;
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      animation: spin 3s linear infinite;
+    
+      
+    }
+
+    .moon {
+      height: 50px;
+      width: 50px;
+      background-color: grey;
+      border-radius: 50%;
+      box-shadow: 5px 5px 10px white;
+    }
+
+    @keyframes spin {
+     
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="earth"></div>
+  <div class="orbit">
+    <div class="moon"></div>
+  </div>
+</body>
+</html>
+
+
